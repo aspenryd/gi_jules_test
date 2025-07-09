@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Customer List",
+  "description": "Schema for a list of customer records",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "Index": {
+        "type": "integer",
+        "description": "The unique index of the customer"
+      },
+      "Customer Id": {
+        "type": "string",
+        "description": "The unique identifier for the customer"
+      },
+      "First Name": {
+        "type": "string",
+        "description": "The first name of the customer"
+      },
+      "Last Name": {
+        "type": "string",
+        "description": "The last name of the customer"
+      },
+      "Company": {
+        "type": "string",
+        "description": "The company the customer is associated with"
+      },
+      "City": {
+        "type": "string",
+        "description": "The city where the customer is located"
+      },
+      "Country": {
+        "type": "string",
+        "description": "The country where the customer is located"
+      },
+      "Phone 1": {
+        "type": "string",
+        "description": "The primary phone number of the customer"
+      },
+      "Phone 2": {
+        "type": "string",
+        "description": "The secondary phone number of the customer"
+      },
+      "Email": {
+        "type": "string",
+        "format": "email",
+        "description": "The email address of the customer"
+      },
+      "Subscription Date": {
+        "type": "string",
+        "format": "date",
+        "description": "The date when the customer subscribed"
+      },
+      "Website": {
+        "type": "string",
+        "format": "uri",
+        "description": "The website of the customer or associated company"
+      }
+    },
+    "required": [
+      "Index",
+      "Customer Id",
+      "First Name",
+      "Last Name",
+      "Company",
+      "City",
+      "Country",
+      "Phone 1",
+      "Phone 2",
+      "Email",
+      "Subscription Date",
+      "Website"
+    ]
+  }
+}
