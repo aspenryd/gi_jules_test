@@ -110,7 +110,8 @@ if __name__ == '__main__':
 
     csv_file_path = os.path.join(script_dir, "example files", "customers-100.csv")
     json_schema_path = os.path.join(script_dir, "schemas", "source_customer_list.json")
-    output_directory = os.path.join(script_dir, "Examples")
+    # Output directory should be the same as the CSV file's directory
+    output_directory = os.path.dirname(csv_file_path) # This will be CustomerMapper/example files/
 
     # Ensure Mappers can be found. If process_customers.py is in CustomerMapper/,
     # and Mappers is a subdirectory, Python needs to know where to look for Mappers.
